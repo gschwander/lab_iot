@@ -1,0 +1,23 @@
+# État local Vagrant (VMs, clés SSH générées, cache — jamais à versionner)
+.vagrant/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
+
+# Kubeconfig ou secrets éventuellement générés/téléchargés en local
+*kubeconfig*
+*.pem
+*.key
+!scripts/*.key.example
