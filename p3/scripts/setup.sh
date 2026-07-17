@@ -6,7 +6,7 @@ apt-get install -y curl
 
 # 1. Docker
 curl -fsSL https://get.docker.com | sh
-usermod -aG docker vagrant
+usermod -aG docker "${SUDO_USER:-$USER}"
 
 # 2. kubectl
 KUBECTL_VERSION=$(curl -L -s https://dl.k8s.io/release/stable.txt)
